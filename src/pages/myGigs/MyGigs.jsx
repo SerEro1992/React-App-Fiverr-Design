@@ -1,11 +1,8 @@
-import React from 'react'
-import './MyGuigs.scss';
-function MyGigs() {
-  return (
-	<div>MyGigs
+import React from 'react';
+import './MyGigs.scss';
 
-	</div>
-  )
+function MyGigs() {
+	return <div>MyGigs</div>;
 }
 
-export default MyGigs
+export default MyGigs;
