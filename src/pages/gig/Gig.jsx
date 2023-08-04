@@ -1,3 +1,4 @@
+import { Slider } from 'infinite-react-carousel/lib';
 import React from 'react';
 import './Gig.scss';
 
@@ -10,6 +11,7 @@ function Gig() {
 					<h1>I will create ai generated art for you</h1>
 					<div className="user">
 						<img
+							className="pp"
 							src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600"
 							alt=""
 						/>
@@ -277,8 +279,5 @@ function Gig() {
 		</div>
 	);
 }
-
-
-
 
 export default Gig;
