@@ -10,6 +10,7 @@ import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
 import "./app.scss"
+import Orders from './pages/orders/Orders';
 
 // import Login from "./pages/login/Login";
 // import Register from "./pages/register/Register";
@@ -58,6 +59,10 @@ function App() {
 				{
 					path: '/message/:id',
 					element: <Message />,
+				},
+				{
+					path: '/orders',
+					element: <Orders />,
 				},
 			],
 		},

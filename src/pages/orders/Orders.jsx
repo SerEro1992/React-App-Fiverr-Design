@@ -1,16 +1,17 @@
 import React from "react";
-import "./MyGigs.scss";
-import { Link } from "react-router-dom";
+import "./Orders.scss";
 
-function MyGigs() {
+function Orders() {
+	const currentUser = {
+		id: 1,
+		username: "Anna Bell",
+		isSeller: true,
+	};
 	return (
-		<div className="myGigs">
+		<div className="orders">
 			<div className="container">
 				<div className="title">
-					<h1>Gig</h1>
-					<Link to="/add" className="link">
-						<button>Add New Gig</button>
-					</Link>
+					<h1>Orders</h1>
 				</div>
 
 				<table>
@@ -18,8 +19,8 @@ function MyGigs() {
 						<th>Image</th>
 						<th>Title</th>
 						<th>Price</th>
-						<th>Sales</th>
-						<th>Action</th>
+						<th>{currentUser?.isSeller ? "Buyer" : "Seller"}</th>
+						<th>Contact</th>
 					</tr>
 					<tr>
 						<td>
@@ -35,7 +36,7 @@ function MyGigs() {
 						</td>
 						<td>13</td>
 						<td>
-							<img className="delete" src="./img/delete.png" alt="" />
+							<img className="delete" src="/img/message.png" alt="" />
 						</td>
 					</tr>
 					<tr>
@@ -52,7 +53,7 @@ function MyGigs() {
 						</td>
 						<td>41</td>
 						<td>
-							<img className="delete" src="./img/delete.png" alt="" />
+							<img className="delete" src="./img/message.png" alt="" />
 						</td>
 					</tr>
 					<tr>
@@ -69,7 +70,7 @@ function MyGigs() {
 						</td>
 						<td>55</td>
 						<td>
-							<img className="delete" src="./img/delete.png" alt="" />
+							<img className="delete" src="./img/message.png" alt="" />
 						</td>
 					</tr>
 					<tr>
@@ -86,7 +87,7 @@ function MyGigs() {
 						</td>
 						<td>29</td>
 						<td>
-							<img className="delete" src="./img/delete.png" alt="" />
+							<img className="delete" src="./img/message.png" alt="" />
 						</td>
 					</tr>
 					<tr>
@@ -103,7 +104,7 @@ function MyGigs() {
 						</td>
 						<td>34</td>
 						<td>
-							<img className="delete" src="./img/delete.png" alt="" />
+							<img className="delete" src="./img/message.png" alt="" />
 						</td>
 					</tr>
 					<tr>
@@ -120,7 +121,7 @@ function MyGigs() {
 						</td>
 						<td>16</td>
 						<td>
-							<img className="delete" src="./img/delete.png" alt="" />
+							<img className="delete" src="./img/message.png" alt="" />
 						</td>
 					</tr>
 				</table>
@@ -129,4 +130,4 @@ function MyGigs() {
 	);
 }
 
-export default MyGigs;
+export default Orders;
